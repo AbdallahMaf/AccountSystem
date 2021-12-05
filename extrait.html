@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleextrait.css">
+    <title>Extrait</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Extrait</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Comptes</a></li>
+            <hr>
+            <li><a href="journal.html">Journal</a></li>
+            <hr>
+            <li><a class="active" href="extrait.html">Extrait</a></li>
+            <hr>
+        </ul>
+    </nav>
+
+    <section class="form">
+        <table cellpadding="20">
+            <tr>
+                <th colspan="3">Formulaire d'enregistrement des Factures</th>
+            </tr>
+            <tr>
+                <td colspan="1" align="center">Date Operation: <input type="date" id="DateOp" name="DateOp"></td>
+                <td><input type="text" placeholder="Nom Operation" id="NomOp" name="NomOp"></td>
+                <td rowspan="2"><input type="number" placeholder="Montant en FCFA " id="Montant" name="Montant"></td>
+            </tr>
+            <tr>
+                <td colspan="1" align="center">Date Reglement: <input type="date" id="DateReg" name="DateReg"></td>
+                <td><input type="text" placeholder="Nom Reglement" id="NomReg" name="NomReg"></td>
+
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><button class="button" onclick="enregistrer();">Enregistrer</button></td>
+            </tr>
+        </table>
+
+        <table id="table" class="journal" border="1" cellpadding="6" width="70%">
+            <tr>
+                <th>Date</th>
+                <th>Nature Transaction</th>
+                <th>Debit</th>
+                <th>Credit</th>
+            </tr>
+        </table>
+
+        <table class="solde" border="1" cellpadding="" width="70%">
+            <tr>
+                <th class="updel"></th>
+                <th>Debit</th>
+                <th>Credit</th>
+            </tr>
+            <tr>
+                <th>Totaux</th>
+                <td id="TotalDeb"></td>
+                <td id="TotalCred"></td>
+            </tr>
+            <tr>
+                <th>Solde</th>
+                <td colspan="2" id="Solde"></td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="extrait.js"></script>
+
+</body>
+
+</html>

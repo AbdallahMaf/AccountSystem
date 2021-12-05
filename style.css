@@ -1,0 +1,90 @@
+/*Style index.html */
+.header{
+    text-align: center;
+    float: right;
+    width: 100%;
+    height: 20%;
+    color: white;
+    background-color: blueviolet;
+}
+nav.nav{
+    width:10%;
+    height: 100vh;
+    float: left;
+    background-color: rgb(231, 220, 220);
+}
+nav ul li {
+    display: block;
+    text-decoration: none;
+    line-height: 110px;   
+}
+a{
+    color:blueviolet;
+    text-decoration: none;
+    font-size: 18px; 
+}
+a.active, a:hover{
+    background: blueviolet;
+    color:  rgb(231, 220, 220);
+    border-radius: 20px;
+    padding: 10px;
+    transition: .5s;
+}
+button.button{
+    background: blueviolet;
+    color:  rgb(231, 220, 220);
+    border-radius: 20px;
+    font-size: 14px;
+    width: 120px;
+    padding: 10px;
+}
+section.form{
+    width: 78%;
+    height: 100vh;
+    float: right;
+}
+table{
+    text-align: center;
+}
+div.div_journal{
+    width: 90%;
+    height: 41%;
+    overflow: auto;
+}
+table.journal{
+    border-collapse: collapse;
+}
+table.solde{
+        border-collapse: collapse;
+        margin-top: 20px;
+}
+table.compte{
+    border-collapse: collapse;
+    width: 80%;
+}
+table.journal tr:nth-child(odd){
+    background-color: rgb(226, 221, 221);
+}
+table.solde tr:nth-child(odd){
+    background-color: rgb(226, 221, 221);
+}
+th{
+    background-color: white;
+}
+th.updel{
+    background-color: blueviolet;
+}
+.btn{
+    border: none;
+    background: none;
+    
+}
+.btn :hover{
+    transition: 0.5s;
+    height: 25px;
+    cursor: pointer;     
+}
+.img{
+    height: 20px;   
+}
+

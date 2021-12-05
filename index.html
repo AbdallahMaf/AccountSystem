@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Comptes</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a class="active" href="index.html">Comptes</a></li>
+            <hr>
+            <li><a href="journal.html">Journal</a></li>
+            <hr>
+            <li><a href="extrait.html">Extrait</a></li>
+            <hr>
+        </ul>
+    </nav>
+
+    <!-- Formulaire de recuperation des informations des comptes -->
+    <section class="form">
+        <table cellpadding="20">
+            <tr>
+                <th colspan="3">Enregistrement de Comptes</th>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="Numero compte" id="input_NumCompte" name="input_NumCompte"></td>
+                <td><input type="text" placeholder="Intitule du Compte" id="input_IntCompte" name="input_IntCompte">
+                </td>
+                <td><select id="input_classe" name="input_classe">
+                        <option>1- Comptes De Ressources Durables</option>
+                        <option>2- Comptess D'actif Immobilise</option>
+                        <option>3- Comptes De Stocks</option>
+                        <option>4- Comptes De Tiers</option>
+                        <option>5- Comptes De Tresorerie</option>
+                        <option>6- Comptes De Charges Des Activites Ordinaires</option>
+                        <option>7- Comptes De Produits Des Activites Ordinaires</option>
+                        <option>8- Comptes Des Autres Charges & Des Autres Produits</option>
+                        <option>9- Comptes Des Engagements Hors Bilan & Comptes CAG</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><button class="button" onclick="ajouter()">Ajouter</button> </td>
+            </tr>
+        </table>
+
+
+        <!-- Tableau d'affichage des informations ajouter via le formulaire -->
+        <table id="table" class="journal" border="1" cellpadding="7">
+            <tr>
+                <th>N* Compte</th>
+                <th>Intitule du Compte</th>
+                <th>Classe</th>
+                <th class="updel" colspan="3"></th>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- Script Javascript -->
+    <script src="compte.js"></script>
+
+</body>
+
+</html>

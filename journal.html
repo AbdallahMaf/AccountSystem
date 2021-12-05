@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylejournal.css">
+    <title>Journal</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Journal</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Comptes</a></li>
+            <hr>
+            <li><a class="active" href="journal.html">Journal</a></li>
+            <hr>
+            <li><a href="extrait.html">Extrait</a></li>
+            <hr>
+        </ul>
+    </nav>
+    <section class="form">
+        <table cellpadding="20">
+            <tr>
+                <th colspan="3">Formulaire d'enregistrement dans le Journal</th>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="Numero compte a debiter" id="Num_ComptDeb" name="Num_ComptDeb">
+                </td>
+                <td><input type="text" placeholder="Compte a debiter" id="CompDeb" name="CompDeb"></td>
+                <td><input type="number" placeholder="Montant a debiter en FCFA" id="MontDeb" name="MontDeb"></td>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="Numero compte a crediter" id="NumComptCred" name="NumComptCred">
+                </td>
+                <td><input type="text" placeholder="Compte a crediter" id="CompCred" name="CompCred"></td>
+                <td><input type="number" placeholder="Montant a crediter en FCFA" id="MontCred" name="MontCred"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><textarea cols="30" rows="5"
+                        placeholder="Libelle/Nature de la transaction" id="NatTrans" name="NatTrans"></textarea></td>
+                <td colspan="1" align="center"><input type="date" placeholder="Date de l'operation" id="DateOp"
+                        name="DateOp"></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><button class="button" onclick="enregistrer();">Enregistrer</button></td>
+            </tr>
+        </table>
+
+        <div class="div_journal">
+            <table id="table" class="journal" border="1" cellpadding="6" width="100%">
+                <tr>
+                    <th>Date Operation</th>
+                    <th>N* Compte Debiter</th>
+                    <th>N* Compte Crediter</th>
+                    <th>Nature Transaction</th>
+                    <th>Montant Debiter</th>
+                    <th>Montant Crediter</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="journ.js"></script>
+
+
+</body>
+
+</html>
